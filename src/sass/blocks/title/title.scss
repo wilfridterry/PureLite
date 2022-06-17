@@ -1,0 +1,25 @@
+.title {
+    font-size: 96px;
+    line-height: 70px;
+    width: 500px;
+
+    &__wrapper {
+        position: relative;
+
+    }
+
+    &__black1, &__black2 {
+        color: black;
+        @include text-border(3px);
+        background-color: black;
+    }
+
+    &__black2 {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        height: 50px;
+        width: 500px;
+        overflow: hidden;
+    }
+}
