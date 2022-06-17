@@ -1,6 +1,0 @@
-@mixin text-border($prop) {
-    text-shadow: (-$prop) $prop 0 white,
-                $prop $prop 0 white,
-                $prop (-$prop) 0 white,
-                (-$prop) (-$prop) 0 white;
-}
