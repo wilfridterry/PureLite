@@ -1,11 +1,94 @@
 .promo {
-    position: relative;
+    &__container {
+        position: relative;
+        max-width: 1330px;
+        margin: auto;    
+        background: left 705px top 0 no-repeat url("../img/section1/Rectangle1.png"),
+        right 100px top 0 no-repeat url("../img/section1/Shapes.png"),
+        left 0 bottom 0 no-repeat url("../img/section1/Rectangle3.png");
+    }
     margin-top: 160px;
     min-height: 995px;
     padding-top: 95px;
-    background: left 805px top 82px no-repeat url("../img/section1/Rectangle1.png"),
-                right 100px top 82px no-repeat url("../img/section1/Shapes.png"),
-                left 0 bottom 190px no-repeat url("../img/section1/Rectangle3.png");
 
-    
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        width: 650px;
+        padding-left: 40px;
+    }
+    &__subtitle {
+        position: relative;
+        height: 100%;
+        width: 70px;
+        span {
+            position: absolute;
+            text-decoration: underline;
+            width: inherit;
+            height: inherit;
+            // transform: rotateX(-90deg);
+            font-size: 22px;
+        }
+    }
+    &__text {
+        margin-top: 15px;
+        max-width: 500px;
+        font-size: 16px;
+        padding-left: 40px;
+        span {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    &__title-7 {
+        position: absolute;
+        top: 150px;
+        left: 710px;
+        font-size: 41px;
+        line-height: 41px;
+    }
+    &__images {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    &__image {
+        width: 400px;
+        height: 270px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__banner {
+        margin-top: 50px;
+        height: 295px;
+        padding-top: 86px;
+        background: center/cover no-repeat url("../img/section1/bg.png");
+        &-wrapper {
+            padding: 0 40px;
+        }
+    }
+    &__title {
+        font-size: 59px;
+        line-height: 41px;
+    }
+    &__button {
+        display: block;
+        margin-top: 35px;
+        width: 260px;
+        padding: 20px 45px;
+        border: 2px solid white;
+        font-size: 21px;
+        color: white;
+        &:hover {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+    }
 }
+
